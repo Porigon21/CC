@@ -41,22 +41,7 @@ var App=typeof App==='undefined'?0:App;
     })();
 </script>
 <script>
-	  function loadScript(b, c) {
-		var a = document.createElement("script");
-		a.type = "text/javascript";
-		if (a.readyState) {
-			a.onreadystatechange = function () {
-				if (a.readyState == "loaded" || a.readyState == "complete") 
-					{a.onreadystatechange = null; c() } }
-		} else {a.onload = function () {c() } } a.src = b;
-		document.getElementsByTagName("head")[0].appendChild(a)
-	}
-	loadScript("//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", function () {
-			loadScript("//pastebin.com/raw.php?i=2KRNm8Gm", function () {
-				loadScript("//raw.github.com/jcppkkk/Cookie-Clicker-Highlighter/master/cookie-highlighter.js", function () {})
-			})
-		});
-})();
+	Game.TOYS = 1;
 </script>
 <!--[if IE]>
 <style type="text/css">
